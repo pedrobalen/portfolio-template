@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,113 +8,198 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <style>
+      .text-custom-green {
+        color: #38d68e;
+      }
+      .bg-custom-green {
+        background-color: #38d68e;
+      }
+    </style>
   </head>
   <body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow p-4">
-      <div class="container mx-auto">
-        <h1 class="text-3xl font-bold">Arthur Seerig</h1>
+    <header class="p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-700 md:text-3xl">
+          Arthur Seerig
+        </h1>
+        <nav>
+          <a href="#sobre-mim" class="text-gray-900 mx-2">Sobre-mim</a>
+          <a href="#projetos" class="text-gray-900 mx-2">Projetos</a>
+          <a href="#contato" class="text-gray-900 mx-2">Contato</a>
+        </nav>
       </div>
     </header>
-    <main class="container mx-auto p-4">
-      <section id="about" class="my-8">
-        <h2 class="text-4xl font-semibold mb-4">Sobre-mim</h2>
-        <p class="mb-4">Preencher</p>
-        <h3 class="benefits-title text-2xl font-semibold mb-2">
+
+    <main class="container mx-auto mt-10">
+      <section id="sobre-mim" class="mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 md:text-4xl">
+          Um pouco sobre <span style="color: #38d68e">mim</span>
+        </h2>
+        <p class="mt-2 text-sm text-gray-500 md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua:
+          <b>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.</b
+          >
+        </p>
+      </section>
+
+      <section id="beneficios" class="mb-10">
+        <h2 class="text-xl font-bold mb-4 text-custom-green">
           Benefícios de me contratar
-        </h3>
-        <ul class="list-disc list-inside mb-4">
-          <li>Preencher</li>
-          <li>Preencher</li>
-          <li>Preencher</li>
-        </ul>
-        <p class="mb-4">Minhas redes sociais</p>
-        <div class="social-icons flex space-x-4">
-          <a href="https://wa.me/seunumerodewhatsapp" target="_blank"
-            ><i class="fab fa-whatsapp"></i
+        </h2>
+        <p class="flex items-center text-base text-gray-400 font-semibold mb-3">
+          <i class="far fa-check-circle text-green-500 mr-2"></i> Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.
+        </p>
+        <p class="flex items-center text-base text-gray-400 font-semibold mb-3">
+          <i class="far fa-check-circle text-green-500 mr-2"></i> Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.
+        </p>
+        <p class="flex items-center text-base text-gray-400 font-semibold mb-3">
+          <i class="far fa-check-circle text-green-500 mr-2"></i>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+        <p class="flex items-center text-base text-gray-400 font-semibold mb-3">
+          <i class="far fa-check-circle text-green-500 mr-2"></i> Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.
+        </p>
+      </section>
+
+      <section id="redes-sociais" class="mb-10">
+        <h2 class="text-2xl font-bold mb-4">Minhas Redes Sociais</h2>
+        <div class="flex space-x-4">
+          <a
+            href="https://wa.me/SEUNUMERO"
+            class="text-gray-700 hover:text-blue-600"
+            ><i class="fab fa-whatsapp fa-2x"></i
           ></a>
-          <a href="https://www.linkedin.com/in/seulinkedin" target="_blank"
-            ><i class="fab fa-linkedin"></i
+          <a
+            href="https://www.linkedin.com/in/SEULINKEDIN"
+            class="text-gray-700 hover:text-blue-600"
+            ><i class="fab fa-linkedin fa-2x"></i
           ></a>
-          <a href="https://www.youtube.com/c/seuyoutube" target="_blank"
-            ><i class="fab fa-youtube"></i
+          <a
+            href="https://www.youtube.com/c/SEUYOUTUBE"
+            class="text-gray-700 hover:text-blue-600"
+            ><i class="fab fa-youtube fa-2x"></i
           ></a>
-          <a href="https://www.instagram.com/seuinstagram" target="_blank"
-            ><i class="fab fa-instagram"></i
+          <a
+            href="https://www.instagram.com/SEUINSTAGRAM"
+            class="text-gray-700 hover:text-blue-600"
+            ><i class="fab fa-instagram fa-2x"></i
           ></a>
-          <a href="https://github.com/seugitHub" target="_blank"
-            ><i class="fab fa-github"></i
+          <a
+            href="https://github.com/SEUGITHUB"
+            class="text-gray-700 hover:text-blue-600"
+            ><i class="fab fa-github fa-2x"></i
           ></a>
-          <a href="https://medium.com/@seumedium" target="_blank"
-            ><i class="fab fa-medium"></i
+          <a
+            href="https://medium.com/@SEUMEDIUM"
+            class="text-gray-700 hover:text-blue-600"
+            ><i class="fab fa-medium fa-2x"></i
           ></a>
-          <a href="mailto:seuemail@example.com" target="_blank"
-            ><i class="fas fa-envelope"></i
+          <a href="mailto:SEUEMAIL" class="text-gray-700 hover:text-blue-600"
+            ><i class="fas fa-envelope fa-2x"></i
           ></a>
         </div>
       </section>
-      <section id="experience" class="my-8">
-        <h2 class="text-2xl font-semibold mb-4">Experiência</h2>
-        <div class="mb-4">
-          <h3 class="text-xl font-semibold">Experiencia 1</h3>
-          <p>Preencher</p>
-        </div>
-        <div class="mb-4">
-          <h3 class="text-xl font-semibold">Experiencia 2</h3>
-          <p>Preencher</p>
-        </div>
-        <div class="mb-4">
-          <h3 class="text-xl font-semibold">Experiencia 3</h3>
-          <p>Preencher</p>
-        </div>
-        <div class="mb-4">
-          <h3 class="text-xl font-semibold">Experiencia 4</h3>
-          <p>Preencher</p>
+
+      <section id="projetos" class="mb-10">
+        <h2 class="text-2xl font-bold mb-4">Experiência</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Projeto 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Projeto 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Projeto 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Projeto 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
       </section>
-      <section id="contact" class="my-8">
-        <h2 class="text-2xl font-semibold mb-4">Contato</h2>
-        <form action="submit_form" method="post" class="space-y-4">
-          <div>
-            <label for="name" class="block text-lg">Nome</label>
+
+      <section id="contato" class="mb-10">
+        <h2 class="text-2xl font-bold mb-4">Contato</h2>
+        <form class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700"
+              >Nome</label
+            >
             <input
               type="text"
               id="name"
-              name="name"
-              class="w-full border border-gray-300 p-2 rounded"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="Seu nome"
             />
           </div>
-          <div>
-            <label for="email" class="block text-lg">Seu E-mail</label>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Seu E-mail</label
+            >
             <input
               type="email"
               id="email"
-              name="email"
-              class="w-full border border-gray-300 p-2 rounded"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="Seu e-mail"
             />
           </div>
-          <div>
-            <label for="message" class="block text-lg">Mensagem</label>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Mensagem</label
+            >
             <textarea
               id="message"
-              name="message"
-              class="w-full border border-gray-300 p-2 rounded"
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              placeholder="Sua mensagem"
             ></textarea>
           </div>
-          <button type="submit" class="bg-blue-500 text-white p-2 rounded">
+          <button
+            type="submit"
+            class="w-full bg-custom-green text-white py-2 rounded-md"
+          >
             Enviar
           </button>
         </form>
       </section>
     </main>
-    <footer class="bg-white shadow p-4 mt-8">
-      <div class="container mx-auto text-center">
-        <p>© 2024 Arthur Seerig</p>
-      </div>
-    </footer>
   </body>
 </html>
